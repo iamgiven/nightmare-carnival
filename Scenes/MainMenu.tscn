@@ -1,0 +1,182 @@
+[gd_scene load_steps=19 format=3 uid="uid://d2rhujb5bl68b"]
+
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_0bkgj"]
+[ext_resource type="Texture2D" uid="uid://dxrda24qvtg1t" path="res://Assets/Img/menu_bg.jpg" id="1_26tok"]
+[ext_resource type="FontFile" uid="uid://dgsnv3v0nhwgf" path="res://Assets/Fonts/Another Danger Slanted - Demo.otf" id="1_pettf"]
+[ext_resource type="AudioStream" uid="uid://cq4cl45vve1tj" path="res://Assets/Sound/start_menu_bgm.mp3" id="4_3hles"]
+
+[sub_resource type="Theme" id="Theme_2v6gm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8ioeh"]
+font = ExtResource("1_pettf")
+font_size = 120
+font_color = Color(0.682262, 0.0198326, 0.0197252, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p76hs"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g73g1"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfe6f"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ml0t3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8x7xw"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8dm1"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uel1b"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2dhqq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnlto"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y60ow"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jw4g5"]
+bg_color = Color(0.427451, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s00yi"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0bkgj")
+
+[node name="MenuBg" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_2v6gm")
+texture = ExtResource("1_26tok")
+
+[node name="GameTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -470.5
+offset_top = 100.0
+offset_right = 471.5
+offset_bottom = 318.0
+grow_horizontal = 2
+text = "Nightmare Carnival"
+label_settings = SubResource("LabelSettings_8ioeh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_p76hs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g73g1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dfe6f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ml0t3")
+text = "Play"
+
+[node name="AboutButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = 180.0
+offset_right = 180.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_8x7xw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v8dm1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uel1b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2dhqq")
+text = "About"
+
+[node name="start_menu_bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_3hles")
+volume_db = 10.0
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -180.0
+offset_top = -200.0
+offset_right = 180.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_cnlto")
+theme_override_styles/hover = SubResource("StyleBoxFlat_y60ow")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jw4g5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s00yi")
+text = "Exit"

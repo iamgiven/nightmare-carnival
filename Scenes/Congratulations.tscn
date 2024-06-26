@@ -1,0 +1,129 @@
+[gd_scene load_steps=14 format=3 uid="uid://b8ql1g0eilhsc"]
+
+[ext_resource type="Script" path="res://Scripts/Congratulations.gd" id="1_ifdb6"]
+[ext_resource type="Texture2D" uid="uid://5sbhpmqve4hg" path="res://Assets/Img/congrats.jpg" id="2_7muwr"]
+[ext_resource type="FontFile" uid="uid://cpa4ppnuip137" path="res://Assets/Fonts/Another Danger - Demo.otf" id="3_er1nd"]
+[ext_resource type="AudioStream" uid="uid://bmh858ne5mhvq" path="res://Assets/Sound/carnival_sound.mp3" id="4_w7s3b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2jm34"]
+font = ExtResource("3_er1nd")
+font_size = 96
+font_color = Color(0.682353, 0.0196078, 0.0196078, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rimky"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bppdp"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blbkk"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8p7wh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0ygl"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbipn"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_73wkv"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fxluc"]
+
+[node name="Congratulations" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ifdb6")
+
+[node name="CongratulationsBg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7muwr")
+
+[node name="CongratulationsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 106.0
+offset_right = 1471.0
+offset_bottom = 311.0
+text = "Congratulations !!"
+label_settings = SubResource("LabelSettings_2jm34")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_rimky")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bppdp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_blbkk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8p7wh")
+text = "Play Again"
+
+[node name="MenuButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -180.0
+offset_top = -360.0
+offset_right = 180.0
+offset_bottom = -240.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_n0ygl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kbipn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_73wkv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fxluc")
+text = "Menu"
+
+[node name="BackgroundSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_w7s3b")

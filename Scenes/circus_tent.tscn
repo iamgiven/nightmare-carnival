@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcxfg2vvmls5j"]
+
+[ext_resource type="ArrayMesh" uid="uid://bc51husxorpmq" path="res://Assets/circus_tent.obj" id="1_4cq6u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vr2h"]
+albedo_color = Color(0.384314, 0.0313726, 0.133333, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bjpow"]
+size = Vector3(111.295, 250.028, 109.239)
+
+[node name="CircusTent" type="StaticBody3D"]
+
+[node name="CircusTent" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_4cq6u")
+surface_material_override/0 = SubResource("StandardMaterial3D_5vr2h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 1.0271, 999.817, 1.02754)
+shape = SubResource("BoxShape3D_bjpow")

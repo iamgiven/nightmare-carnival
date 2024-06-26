@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0c16v8cyqi62"]
+
+[ext_resource type="ArrayMesh" uid="uid://bywb8cp4ekat" path="res://Assets/Carousel.obj" id="1_3cnh0"]
+[ext_resource type="Texture2D" uid="uid://dnqvctccii2j7" path="res://Textures/Diffuse.png" id="2_88rel"]
+[ext_resource type="Texture2D" uid="uid://dce3xlrkvymyg" path="res://Textures/Emit.png" id="3_apgm7"]
+[ext_resource type="Texture2D" uid="uid://6xdw2blkffsc" path="res://Textures/normal.png" id="4_qormn"]
+[ext_resource type="Texture2D" uid="uid://gg0ufq6ylggd" path="res://Textures/rougness.png" id="5_hj675"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_myp3b"]
+albedo_texture = ExtResource("2_88rel")
+roughness_texture = ExtResource("5_hj675")
+emission_enabled = true
+emission_texture = ExtResource("3_apgm7")
+normal_enabled = true
+normal_texture = ExtResource("4_qormn")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h62ba"]
+size = Vector3(0.929932, 250.028, 0.910751)
+
+[node name="Carousel" type="StaticBody3D"]
+
+[node name="Carousel" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = ExtResource("1_3cnh0")
+surface_material_override/0 = SubResource("StandardMaterial3D_myp3b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -0.0439453, 999.817, 0.0546443)
+shape = SubResource("BoxShape3D_h62ba")

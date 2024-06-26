@@ -1,0 +1,167 @@
+[gd_scene load_steps=7 format=3 uid="uid://c87nk2kh1cq0"]
+
+[ext_resource type="Script" path="res://Scripts/About.gd" id="1_b26i0"]
+[ext_resource type="Texture2D" uid="uid://mhqe0f8yms2" path="res://Assets/Img/dark_menu_bg.jpg" id="1_hg7xi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_brsgs"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lxdy"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1fe0"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q5ipb"]
+
+[node name="About" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b26i0")
+
+[node name="AboutBg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_hg7xi")
+
+[node name="TeamTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -210.5
+offset_top = 50.0
+offset_right = 210.5
+offset_bottom = 133.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "Team
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Person1" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.5
+offset_top = 150.0
+offset_right = 237.5
+offset_bottom = 200.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Sya'roni Zulfikar (21106050038)"
+vertical_alignment = 1
+
+[node name="Person2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.5
+offset_top = 200.0
+offset_right = 237.5
+offset_bottom = 250.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Aji Sejati (21106050039)"
+vertical_alignment = 1
+
+[node name="Person3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.5
+offset_top = 250.0
+offset_right = 237.5
+offset_bottom = 300.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Givendra Dipanegara (21106050045)"
+vertical_alignment = 1
+
+[node name="Person4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.5
+offset_top = 300.0
+offset_right = 237.5
+offset_bottom = 350.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Nanda Arya (21106050048)"
+vertical_alignment = 1
+
+[node name="BackstoryTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -611.5
+offset_top = -680.0
+offset_right = 611.5
+offset_bottom = -597.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.699195, 2.08165e-06, 6.73831e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Backstory"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackstoryLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -611.5
+offset_top = -580.0
+offset_right = 611.5
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Seorang ilmuwan mengunjungi sebuah karnaval terbengkalai di desa yang pernah terkena paparan senjata biologis untuk keperluan penelitian. Dahulu desa ini pernah menjadi tempat berbagai uji coba selama perang dunia ke-2. Semuanya berubah menjadi mimpi buruk ketika terjadi kesalahan teknis yang menyebabkan sampel serum-X bocor keluar dan tersebar hingga pelosok desa, mengontaminasi sebagian besar penduduk disana. Ada yang berhasil selamat, namun lebih banyak yang meninggal dunia. Saking banyaknya, beberapa tempat publik dialih-fungsikan sebagai pemakaman, termasuk karnval ini. Korban yang selamat kemudian dievakusi meninggalkan desa. Saat tiba disana, ilmuwan ini menyadari ada sesuatu yang aneh dengan tempat ini. Di balik kesunyian, muncul sosok-sosok mengerikan—zombie-zombie yang kelaparan akan daging manusia. Mereka keluar dari bayang-bayang, mengintai setiap langkah sang pemuda. Kini, dia harus bertahan hidup dan melawan serangan tanpa henti dari para zombie untuk menemukan jalan keluar dari karnaval yang mengerikan ini."
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 270.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_brsgs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8lxdy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_k1fe0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q5ipb")
+text = "Back"

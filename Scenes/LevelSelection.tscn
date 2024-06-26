@@ -1,0 +1,253 @@
+[gd_scene load_steps=26 format=3 uid="uid://7syco1jgnc3c"]
+
+[ext_resource type="Texture2D" uid="uid://dxrda24qvtg1t" path="res://Assets/Img/menu_bg.jpg" id="1_s5ug3"]
+[ext_resource type="Script" path="res://Scripts/LevelSelection.gd" id="1_usvuo"]
+[ext_resource type="FontFile" uid="uid://cpa4ppnuip137" path="res://Assets/Fonts/Another Danger - Demo.otf" id="3_c8cbs"]
+[ext_resource type="AudioStream" uid="uid://cq4cl45vve1tj" path="res://Assets/Sound/start_menu_bgm.mp3" id="4_kyftb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_85pbn"]
+font = ExtResource("3_c8cbs")
+font_size = 96
+font_color = Color(0.682353, 0.0196078, 0.0196078, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1cdpe"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gs21f"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lqi2b"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7l8nq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1du2"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2fhfd"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qiuyq"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hry48"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gu07m"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vj64"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq56t"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5rmny"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sbyac"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6cr3v"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbur0"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f0f2l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uffsi"]
+bg_color = Color(0.427451, 0.00784314, 0.00784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfq64"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35mjd"]
+bg_color = Color(0.337255, 0.00392157, 0.00392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cn60f"]
+
+[node name="LevelSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_usvuo")
+
+[node name="LevelSelectionBg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_s5ug3")
+
+[node name="ChooseLevelLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -542.0
+offset_top = 90.0
+offset_right = 542.0
+offset_bottom = 308.0
+grow_horizontal = 2
+text = "Choose Level"
+label_settings = SubResource("LabelSettings_85pbn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EasyButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -180.0
+offset_right = 180.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_1cdpe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gs21f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lqi2b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7l8nq")
+text = "Easy"
+
+[node name="MediumButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -20.0
+offset_right = 180.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_u1du2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2fhfd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qiuyq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hry48")
+text = "Medium"
+
+[node name="HardButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = 140.0
+offset_right = 180.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_gu07m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5vj64")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hq56t")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5rmny")
+text = "Hard"
+
+[node name="NightmareButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = 300.0
+offset_right = 180.0
+offset_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_sbyac")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6cr3v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qbur0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f0f2l")
+text = "Nightmare"
+
+[node name="start_menu_bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_kyftb")
+volume_db = 10.0
+
+[node name="MainMenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 270.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_uffsi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gfq64")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_35mjd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cn60f")
+text = "Menu"

@@ -1,0 +1,60 @@
+[gd_scene load_steps=17 format=3 uid="uid://dkhc8ln10k8dw"]
+
+[ext_resource type="ArrayMesh" uid="uid://meqhf4u4b1wv" path="res://Assets/Street_Food.obj" id="1_45guy"]
+[ext_resource type="Texture2D" uid="uid://bja3v5s4ohs6g" path="res://Textures/Street_Food_Texture/blow_glass.png" id="2_l27c2"]
+[ext_resource type="Texture2D" uid="uid://coue7obs1f142" path="res://Textures/Street_Food_Texture/cart_sign_Eng.png" id="3_dlhhr"]
+[ext_resource type="Texture2D" uid="uid://dufhtnuqw2uhk" path="res://Textures/Street_Food_Texture/cart_decor.png" id="4_s4a0l"]
+[ext_resource type="Texture2D" uid="uid://bon3cpwb7lofp" path="res://Textures/Street_Food_Texture/grill.png" id="5_if6eg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4cxrm"]
+albedo_texture = ExtResource("2_l27c2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qelv"]
+albedo_texture = ExtResource("2_l27c2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fkgjs"]
+albedo_texture = ExtResource("3_dlhhr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38ubc"]
+albedo_texture = ExtResource("4_s4a0l")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63f6y"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lw2e"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ls8e6"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ba7nx"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uaspd"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51ro4"]
+albedo_texture = ExtResource("5_if6eg")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h62ba"]
+
+[node name="StreetFood" type="StaticBody3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="StreetFood" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53972, 0, 0.778607)
+mesh = ExtResource("1_45guy")
+surface_material_override/0 = SubResource("StandardMaterial3D_4cxrm")
+surface_material_override/1 = SubResource("StandardMaterial3D_3qelv")
+surface_material_override/2 = SubResource("StandardMaterial3D_fkgjs")
+surface_material_override/3 = SubResource("StandardMaterial3D_38ubc")
+surface_material_override/4 = SubResource("StandardMaterial3D_63f6y")
+surface_material_override/5 = SubResource("StandardMaterial3D_6lw2e")
+surface_material_override/6 = SubResource("StandardMaterial3D_ls8e6")
+surface_material_override/7 = SubResource("StandardMaterial3D_ba7nx")
+surface_material_override/8 = SubResource("StandardMaterial3D_uaspd")
+surface_material_override/9 = SubResource("StandardMaterial3D_51ro4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 3.70372, 0.488055)
+shape = SubResource("BoxShape3D_h62ba")
